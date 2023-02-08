@@ -1,0 +1,20 @@
+<template>
+    <lightning-card title="Greater Number">
+        <lightning-input type="number" label="Enter Number1 " name="aval" onchange={callme}></lightning-input>
+        <lightning-input type="number" label="Enter Number2 " name="bval" onchange={callme}></lightning-input>
+        <lightning-input type="number" label="Enter Number3 " name="cval" onchange={callme}></lightning-input>  
+
+        <lightning-button label="Calculate" onclick={calculateGrater}></lightning-button>
+    </lightning-card>
+
+    <lightning-card title="Sum of n numbers">
+        <lightning-input type="number" label="Enter the number" name="nval" onchange={callme}></lightning-input>
+        <lightning-button label="Calculate" onclick={calculateNnumber}></lightning-button>
+    </lightning-card>
+
+    <lightning-card title="Result">
+
+        Result  :   {result}
+
+    </lightning-card>
+</template>

@@ -1,0 +1,9 @@
+<template>
+    <lightning-card title="Oppoortunity Record" icon-name="standard:opportunity">
+        <template if:true={Opportunity.data}>
+            Opportunity Name    : {Name}        <p></p>
+            Opportunity Amount : {Amount}     <p></p>
+            Opportunity Stage   : {StageName}   <p></p>
+        </template>
+    </lightning-card>
+</template>

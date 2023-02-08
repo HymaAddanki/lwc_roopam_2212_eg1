@@ -1,0 +1,35 @@
+<template>
+    =========firt way===========<p></p>
+    <template for:each={cities} for:item= a>
+        <p key={a}> {a} </p>
+    </template>
+    ==========second way=========<p></p>
+    <template iterator:item={cities}>
+        <p key = {item.value}> {item.value}</p>
+    </template>
+
+    ===========third way==========<p></p>
+
+    Employee Name = {employee.name} <p></p>
+    Employee Age = {employee.age} <p></p>
+    Employee City = {employee.city} <p></p>
+    Employee Salary = {employee.salary} <p></p>
+
+    ===========array of Json Values=========<p></p>
+
+    <template for:each={employees} for:item="employees">
+        <ul key={employees.name}>
+            <lightning-card title="HelloForEach" icon-name="custom:custom14">
+                <li class="slds-m-around_small">
+                    Employee Name = {employees.name}<p></p>
+                    Employee Age = {employees.age}<p></p>
+                    Employee City ={employees.city}<p></p>
+                    Employee Salary ={employees.salary}<p></p>
+                </li>
+            </lightning-card>
+        </ul>
+    </template>
+   
+        
+
+</template>

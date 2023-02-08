@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="calculator">
+        <lightning-input type="number" label="Enter First Number" name="aval" onchange={callme}></lightning-input>
+        <lightning-input type="number" label="Enter Second Number" name="bval" onchange={callme}></lightning-input>
+       
+        <lightning-button label="Add" onclick={addme}></lightning-button>
+        <lightning-button label="Subtraction" onclick={subme}></lightning-button>
+        <lightning-button label="multiplication" onclick={mulme}></lightning-button>
+        <p>
+            result: {resvalue}
+        </p>
+        
+    </lightning-card>
+</template>
